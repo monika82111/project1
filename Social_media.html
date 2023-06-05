@@ -1,0 +1,347 @@
+<!-- DROPDOWN ICON AND THREE DOTS ICON NOT VISIBLE......in programme -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Website</title>
+
+    <!-- adding stylesheet inside the file using link tag  -->
+    <link rel="stylesheet" href="style5.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="nav-left">
+        <!-- <p><b>BUDDYGRAM</b></p> -->
+        <img src="images/logo31.png" class="logo" />
+        <ul>
+          <li><img src="images/notification1.png" /></li>
+          <li><img src="images/message2.png" /></li>
+          <li><img src="images/video2.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="images/status-1.jpg" />
+      </div>
+     
+      <!-- settings menu  -->
+      <div class="settings-menu">
+        <!-- switch between dark mode and light mode -->
+        <div id = "dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/status-1.jpg" />
+            <div>
+              <p>Ashnoor</p>
+              <a href="profile.html">See your Profile</a>
+            </div>
+          </div>
+           <hr>
+          <div class="user-profile">
+            <img src="images/feedback.jpg" />
+            <div>
+              <p>Give feedback</p>
+              <a href="#">Help us to improve the new design.</a>
+            </div>
+          </div>
+          <hr>
+
+          <div class = "setting-links">
+            <img src = "images/settings.jpg" class="settings-icon">
+            <a href = "#">Settings & Privacy <img src = "images/arrow.jpg" width="10px"></a>
+          </div>
+
+          <div class = "setting-links">
+            <img src = "images/help.jpg" class="settings-icon">
+            <a href = "#">Help & Support <img src = "images/arrow.jpg" width="10px"></a>
+          </div>
+
+          <div class = "setting-links">
+            <img src = "images/display.jpg" class="settings-icon">
+            <a href = "#">Display & Accessibility <img src = "images/arrow.jpg" width="10px"></a>
+          </div>
+
+          <div class = "setting-links">
+            <img src = "images/logout.jpg" class="settings-icon">
+            <a href = "#">Logout <img src = "images/arrow.jpg" width="10px"></a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- containing three classes with the container -->
+    <div class="container">
+      <!-- left-sidebar -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/news.jpg" />Latest News </a>
+          <a href="#"><img src="images/friends.png" />Friends</a>
+          <a href="#"><img src="images/group.png" />Groups</a>
+          <a href="#"><img src="images/marketplace.jpg" />marketplace</a>
+          <a href="#"><img src="images/watch.png" />Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="Shortcut-Links">
+          <p>Your Shortcut</p>
+          <a href="#"><img src="images/shortcut1.jfif" />Web Developers </a>
+          <a href="#"><img src="images/shortcut2.jfif" />Web Design Course</a>
+          <a href="#"
+            ><img src="images/shortcut3.jfif" />Full Stack Developer</a
+          >
+          <a href="#"><img src="images/shortcut4.jfif" />Website Experts</a>
+        </div>
+      </div>
+      <!-- main-content -->
+      <div class="main-content">
+        <!-- adding stories in website that appear in social media websige such as fb -->
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.jpg" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member1.jpg" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member2.jpg" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member3.jpg" />
+            <p>Samona</p>
+          </div>
+          <div class="story story5">
+            <img src="images/member4.jpg" />
+            <p>John Doe</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/status-1.jpg" />
+            <div>
+              <p>Ashnoor</p>
+              <small>Public <i class="fa-duotone fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind ashnoor?"
+            ></textarea>
+
+            <!-- now adding links  -->
+            <div class="add-post-links">
+              <a href="#"><img src="images/livevideo3.jpg" />Live Video</a>
+              <a href="#"><img src="images/photo.jpg" />Photo/Video</a>
+              <a href="#"><img src="images/feeling.jpg" />Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/status-1.jpg" />
+              <div>
+                <p>Ashnoor</p>
+                <span>March 27 2022 , 14:26pm </span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Subscribe<span> @Easy Tutorials </span>youtube channel to watch more
+            videos on website development and UI designs .
+            <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel </a>
+          </p>
+          <img src="images/feed-image.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like1.jpg" />120</div>
+              <div><img src="images/comment.png" />45</div>
+              <div><img src="images/share1.jpg" />20</div>
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/status-1.jpg" /><i
+              class="fa-solid fa-square-caret-down"
+            ></i>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/status-1.jpg" />
+              <div>
+                <p>Ashnoor</p>
+                <span>March 28 2022 , 16:26pm </span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and share this video with friends , tag
+            <span> @Easy Tutorials </span>facebook page on your post . Ask your
+            doubts in the comments.<a href="#">#EasyTutorials</a
+            ><a href="#">#YouTubeChannel </a>
+          </p>
+          <img src="images/feed-image2.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like1.jpg" />220</div>
+              <div><img src="images/comment.png" />85</div>
+              <div><img src="images/share1.jpg" />60</div>
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/status-1.jpg" /><i
+              class="fa-solid fa-square-caret-down"
+            ></i>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/status-1.jpg" />
+              <div>
+                <p>Ashnoor</p>
+                <span>March 28 2022 , 16:26pm </span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and share this video with friends , tag
+            <span> @Easy Tutorials </span>facebook page on your post . Ask your
+            doubts in the comments.<a href="#">#EasyTutorials</a
+            ><a href="#">#YouTubeChannel </a>
+          </p>
+          <img src="images/feed-image3.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like1.jpg" />300</div>
+              <div><img src="images/comment.png" />35</div>
+              <div><img src="images/share1.jpg" />50</div>
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/status-1.jpg" /><i
+              class="fa-solid fa-square-caret-down"
+            ></i>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/status-1.jpg" />
+              <div>
+                <p>Ashnoor</p>
+                <span>March 28 2022 , 16:26pm </span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <p class="post-text">
+            Like and share this video with friends , tag
+            <span> @Easy Tutorials </span>facebook page on your post . Ask your
+            doubts in the comments.<a href="#">#EasyTutorials</a
+            ><a href="#">#YouTubeChannel </a>
+          </p>
+          <img src="images/feed-image4.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like1.jpg" />700</div>
+              <div><img src="images/comment.png" />15</div>
+              <div><img src="images/share1.jpg" />20</div>
+            </div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/status-1.jpg" /><i
+              class="fa-solid fa-square-caret-down"
+            ></i>
+          </div>
+        </div>
+        <button type="button" class="load">Load More</button>
+      </div>
+      <!-- right-sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All </a>
+        </div>
+        <div class="Event">
+          <div class="Left-Event">n
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="Right-Event">
+            <h4>Social Media</h4>
+            <p>Willson Park</p>
+            <a href="#">More info</a>
+          </div>
+        </div>
+        <div class="Event">
+          <div class="Left-Event">
+            <h3>20</h3>
+            <span>June</span>
+          </div>
+          <div class="Right-Event">
+            <h4>Mobile Marketing</h4>
+            <p>Willison Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement3.jpg" class="sidebar-ads" />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat </a>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member1.jpg" />
+          </div>
+          <p>alison mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member2.jpg" />
+          </div>
+          <p>jackson aston</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member3.jpg" />
+          </div>
+          <p>Samona-Rose</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright 2021 - Easy Tutorial Youtube Channel</p>
+    </div>
+  <!-- connecting javascript file to html -->
+<script src = "Social_Media_javascrpt.js"></script>
+
+  </body>
+</html>
